@@ -1,0 +1,199 @@
+.oc-widget-calendario {
+  width: 335px;
+  height: 400px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.oc-widget-calendario__top-bar {
+  background-color: #2B5CDA;
+  display: flex;
+  justify-content: space-between;
+}
+.oc-widget-calendario__top-bar__title {
+  display: flex;
+  align-items: center;
+}
+.oc-widget-calendario__top-bar__title span {
+  font-family: "cabin-bold", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.oc-widget-calendario__top-bar__right {
+  display: flex;
+  align-items: center;
+}
+.oc-widget-calendario__content {
+  padding: 0 10px;
+}
+.oc-widget-calendario__content__buttons {
+  display: flex;
+  justify-content: center;
+}
+.oc-widget-calendario__content__buttons button {
+  width: 100px;
+}
+.oc-widget-calendario__content__calendar .month-name {
+  color: #2B5CDA;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 15px;
+  font-size: 20px;
+}
+.oc-widget-calendario__content__calendar ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.oc-widget-calendario__content__calendar ol .day-name {
+  background-color: #C8D1D6;
+  color: white;
+  position: relative;
+  height: 23px;
+  font-family: "helvetica-neue-c-black", sans-serif;
+}
+.oc-widget-calendario__content__calendar ol .day-name::before {
+  content: "";
+  height: 190px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #C8D1D6;
+}
+.oc-widget-calendario__content__calendar ol .day-name.no-line::before {
+  width: 0;
+}
+.oc-widget-calendario__content__calendar ol .day-selected {
+  background-color: #C8D1D6;
+  width: 38px;
+  margin: auto;
+  border-radius: 50%;
+  color: white;
+}
+.oc-widget-calendario__content__calendar ol .day-especial {
+  color: #2B5CDA;
+}
+.oc-widget-calendario__content__calendar ol .day-disabled {
+  color: #C8D1D6;
+}
+.oc-widget-calendario__content__calendar ol li {
+  font-family: "helvetica-neue-condensed", Arial, Helvetica, sans-serif;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #505D6C;
+  font-size: 19px;
+  position: relative;
+}
+.oc-widget-calendario__content__calendar ol li .oc-dots {
+  position: absolute;
+  bottom: -6px;
+}
+.oc-widget-calendario__content__calendar .first-day {
+  grid-column-start: 2;
+}
+.oc-widget-calendario__content__display {
+  background-color: rgba(200, 209, 214, 0.4);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+.oc-widget-calendario__content__display .dot {
+  width: 8px;
+  height: 8px;
+}
+.oc-widget-calendario__content__display .oc-btn-active {
+  margin: 0;
+}
+.oc-widget-calendario__content__display .oc-conv {
+  display: flex;
+  font-family: "roboto-c-regular", sans-serif;
+  color: black;
+  font-size: 12px;
+}
+.oc-widget-calendario__content__display .oc-conv div {
+  margin-right: 8px;
+}
+
+.oc-btn {
+  border-radius: 30px;
+  border: none;
+  margin: 0.5em;
+  margin-top: 0.8em;
+  padding: 3px;
+  font-family: "cabin-bold", sans-serif;
+  color: white;
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-btn-active {
+  background-color: #2B5CDA;
+}
+
+.oc-btn-inactive {
+  background-color: #505D6C;
+  opacity: 0.5;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-ocensa {
+  background-color: #00AF00;
+}
+.dot-personal {
+  background-color: #37ABF4;
+}
+.dot-especial {
+  background-color: #00AF00;
+  position: relative;
+}
+.dot-especial::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/img-widget-calendario/icon-star.svg");
+  background-position: center;
+  background-size: 5px;
+}
+
+.oc-slick-calendar {
+  position: relative;
+}
+.oc-slick-calendar .slick-list {
+  min-height: 259px;
+}
+.oc-slick-calendar .custom-slick-arrow {
+  position: absolute;
+  top: 8px;
+  z-index: 2;
+  cursor: pointer;
+}
+.oc-slick-calendar .custom-slick-arrow.arrow-left {
+  left: 0;
+}
+.oc-slick-calendar .custom-slick-arrow.arrow-right {
+  right: 0;
+}
+
+/*# sourceMappingURL=widget-calendario.css.map */

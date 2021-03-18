@@ -1,0 +1,162 @@
+.oc-widget-calendario
+    width: 335px
+    height: 400px
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
+    overflow: hidden
+    &__top-bar
+        background-color: #2B5CDA
+        display: flex
+        justify-content: space-between
+        &__title
+            display: flex
+            align-items: center
+            span
+                font-family: 'cabin-bold', sans-serif
+                color: white
+                font-size: 20px
+                margin-left: 10px
+        &__right
+            display: flex
+            align-items: center
+    &__content
+        padding: 0 10px
+        &__buttons
+            display: flex
+            justify-content: center
+            button
+                width: 100px
+        &__calendar
+            .month-name
+                color: #2B5CDA
+                font-weight: normal
+                text-align: center
+                margin-top: 10px
+                line-height: 15px
+                font-size: 20px
+            ol
+                list-style: none
+                display: grid
+                grid-template-columns: repeat(7, 1fr)
+                padding: 0
+                text-align: center
+                margin: 0
+                .day-name
+                    background-color: #C8D1D6
+                    color: white
+                    position: relative
+                    height: 23px
+                    font-family: 'helvetica-neue-c-black', sans-serif
+                    &::before
+                        content: ''
+                        height: 190px
+                        width: 1px
+                        position: absolute
+                        right: 0
+                        top: 0
+                        background-color: #C8D1D6
+                    &.no-line
+                        &::before
+                            width: 0
+                .day-selected
+                    background-color: #C8D1D6
+                    width: 38px
+                    margin: auto
+                    border-radius: 50%
+                    color: white
+                .day-especial
+                    color: #2B5CDA
+                .day-disabled
+                    color: #C8D1D6
+                li
+                    font-family: 'helvetica-neue-condensed', Arial, Helvetica, sans-serif
+                    height: 38px
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    align-items: center
+                    color: #505D6C
+                    font-size: 19px
+                    position: relative
+                    .oc-dots
+                        position: absolute
+                        bottom: -6px
+                    
+            .first-day
+                grid-column-start: 2
+        &__display
+            background-color: rgba(#C8D1D6, .4)
+            margin-top: 10px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 8px 10px
+            .dot
+                width: 8px
+                height: 8px
+            .oc-btn-active
+                margin: 0
+            .oc-conv
+                display: flex
+                font-family: 'roboto-c-regular', sans-serif
+                color: black
+                font-size: 12px
+                div
+                    margin-right: 8px
+
+.oc-btn
+    border-radius: 30px
+    border: none
+    margin:  .5em
+    margin-top: .8em
+    padding: 3px
+    font-family: 'cabin-bold', sans-serif
+    color: white
+    width: 100px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.oc-btn-active
+    background-color: #2B5CDA
+.oc-btn-inactive
+    background-color: #505D6C
+    opacity: .5
+
+.dot
+    width: 7px
+    height: 7px
+    background-color: gray
+    border-radius: 50%
+    display: inline-block
+    &-ocensa
+        background-color: #00AF00
+    &-personal
+        background-color: #37ABF4
+    &-especial
+        background-color: #00AF00
+        position: relative
+        &::before
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left:0
+            background-image: url('../img/img-widget-calendario/icon-star.svg')
+            background-position: center
+            background-size: 5px
+
+.oc-slick-calendar
+    position: relative
+    .slick-list
+        min-height: 259px
+    .custom-slick-arrow
+        position: absolute
+        top: 8px
+        z-index: 2
+        cursor: pointer
+        &.arrow-left
+            left: 0
+        &.arrow-right
+            right: 0

@@ -61,12 +61,55 @@
   font-family: "cabin-semibold";
   src: url(../fonts/Cabin-SemiBold.ttf);
 }
+/*HELVETICA*/
+@font-face {
+  font-family: "helvetica-neue-condensed";
+  src: url(../fonts/HelveticaNeueLTStd-Cn.ttf);
+}
+@font-face {
+  font-family: "helvetica-neue-c-black";
+  src: url(../fonts/HelveticaNeueLTStd-BlkCn.ttf);
+}
 h1, h2, h3 {
   font-family: "cabin-bold", sans-serif;
 }
 
 p {
   font-family: "roboto-medium", sans-serif;
+}
+
+.oc-button-close {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.oc-button-close img {
+  margin: auto;
+  width: 13px;
+}
+
+.oc-button-menu {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 28px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.oc-button-menu .line {
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=general-styles.css.map */

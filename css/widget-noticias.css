@@ -22,29 +22,5 @@
   display: flex;
   align-items: center;
 }
-.oc-widget-content__top-bar__right .oc-button-close {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.oc-widget-content__top-bar__right .oc-button-menu {
-  background: transparent;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 28px;
-  height: 30px;
-  outline: none;
-  cursor: pointer;
-}
-.oc-widget-content__top-bar__right .oc-button-menu .line {
-  width: 2px;
-  height: 100%;
-  background-color: white;
-  display: inline-block;
-}
 
 /*# sourceMappingURL=widget-noticias.css.map */
