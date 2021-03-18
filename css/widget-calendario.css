@@ -335,6 +335,11 @@
   cursor: pointer;
 }
 
+.cont-button {
+  height: 92px;
+  display: flex;
+}
+
 .oc-slick-agenda .slick-dots {
   right: 0;
 }
@@ -371,7 +376,7 @@
 .content-dia {
   margin-top: 10px;
   background-color: #ECEFF1;
-  min-height: 330px;
+  min-height: 334px;
 }
 .content-dia__title-bar {
   background-color: #505D6C;
@@ -421,6 +426,24 @@
 
   .oc-slick-event-info .slick-dots {
     transform: translateX(-35px);
+  }
+
+  #wdg-agenda .oc-content-agenda__item__info {
+    padding: 5px 10px;
+  }
+  #wdg-agenda .slick-dots {
+    bottom: -30px !important;
+  }
+
+  .content-day-events .slick-dots {
+    bottom: -20px !important;
+  }
+
+  .content-day .slick-dots {
+    bottom: -18px !important;
+  }
+  .content-day .oc-content-agenda__item__info {
+    max-width: 218px !important;
   }
 }
 

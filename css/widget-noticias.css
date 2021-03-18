@@ -104,12 +104,13 @@
 .oc-widget-content__notices__item__cont__icons ul {
   padding: 0;
   list-style: none;
+  display: flex;
 }
 .oc-widget-content__notices__item__cont__icons ul li {
   padding: 0;
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 15px;
 }
 .oc-widget-content__notices__item__cont__icons ul span {
   font-size: 1.1em;
@@ -132,6 +133,10 @@
 }
 .oc-slick-notices__mobile .oc-widget-content__notices__item.oc-widget-content__notices__left::before {
   width: 0px;
+}
+
+.oc-icon-small {
+  width: 26px;
 }
 
 /*# sourceMappingURL=widget-noticias.css.map */

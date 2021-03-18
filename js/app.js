@@ -14,6 +14,15 @@ $(document).ready(function () {
     dots: true,
     verticalSwiping: true,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        }
+      }
+    ]
   });
 
   $(".oc-slick-notices").slick({
@@ -40,6 +49,15 @@ $(document).ready(function () {
     dots: true,
     verticalSwiping: true,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        }
+      }
+    ]
   });
 
   $(".oc-slick-day").slick({
@@ -49,6 +67,15 @@ $(document).ready(function () {
     dots: true,
     verticalSwiping: true,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+        }
+      }
+    ]
   });
 
 
@@ -101,6 +128,13 @@ $(document).ready(function () {
     e.preventDefault()
     $('.oc-widget-calendario__content').slideUp()
     $('#wdg-calendario').slideDown()
+    $('.oc-slick-theme').slick('refresh');
+  })
+
+  $('.content-day .oc-btn-close').click(function(e) {
+    e.preventDefault()
+    $('.oc-widget-calendario__content').slideUp()
+    $('#wdg-agenda').slideDown()
     $('.oc-slick-theme').slick('refresh');
   })
 });
