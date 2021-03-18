@@ -108,25 +108,31 @@
     border: none
     margin:  .5em
     margin-top: .8em
-    padding: 3px
+    padding: 3px 10px
     font-family: 'cabin-bold', sans-serif
     color: white
-    width: 100px
+    min-width: 100px
     height: 20px
-    display: flex
+    display: inline-flex
     justify-content: center
     align-items: center
     cursor: pointer
+    text-decoration: none
+    font-size: 11px
     &.btn-m-teams
         width: auto
+        min-width: 0px !important
         padding: 0 1em
         background-color: #505D6C
         display: inline-block
+        margin-left: 10px !important
         &:hover
             background-color: #2B5CDA   
 
 .oc-btn-active
     background-color: #2B5CDA
+    &:hover
+        background-color: #505D6C
 .oc-btn-inactive
     background-color: #505D6C
     opacity: .5
@@ -172,6 +178,8 @@
 
 // Styles Agenda
 .oc-content-agenda
+    .oc-btn
+        margin: auto
     &__item
         display: flex
         position: relative
@@ -179,9 +187,12 @@
         padding-bottom: .5em
         border-bottom: 1px solid rgba(#707070, .4 )
         width: 95%
+        box-sizing: border-box
+        
         &__date
             background-color: #505D6C
             width: 23%
+            min-width: 70px
             display: flex
             flex-direction: column
             justify-content: center
@@ -225,6 +236,7 @@
                 font-family: 'cabin-bold', sans-serif
                 color: #505D6C
                 font-size: 15px
+                margin: 10px 0
             .room, .n-guest
                 font-size: 15px
                 display: block
@@ -237,6 +249,7 @@
                         display: flex
                         align-items: flex-start
                         align-items: center
+                        margin-bottom: .5em
                         img
                             display: inline-block
                             width: 31px
@@ -259,6 +272,7 @@
             right: 10px
             top: calc( 50% - 15px )
             cursor: pointer
+            z-index: 5
         
         .oc-btn-close
             background-color: transparent
@@ -270,33 +284,78 @@
 
 .oc-slick-agenda
     .slick-dots
-        position: absolute
-        top: 25%
         right: 0
-        li
-            list-style: none
-            width: 9px
-            height: 9px
-            margin: 18px 0
-            background-color: white
-            border: 1px solid #505D6C
-            border-radius: 50%
-            cursor: pointer
-            &.slick-active
-                background-color: #505D6C
-        button
-            display: none
+    .oc-btn
+        margin: auto
 
 
 // Styles dia
-.content-dia
+.content-dia-evento
     .oc-content-agenda__item
         width: 100%
         background-color: #ECEFF1
         border-bottom: none
+        margin-bottom: 0
+        min-height: 326px
         &__info
             padding-top:30px
+            .title
+                padding-right: 10px
+        .oc-btn
+            text-align: center
+            margin-left: 30px
     .oc-content-agenda__item__date
         width: 40%
         display: inline-flex
         max-height: 85px
+    .oc-slick-event-info
+        .slick-dots
+            right: 5px
+
+// Styles dia
+.content-dia
+    margin-top: 10px
+    background-color: #ECEFF1
+    min-height: 330px
+    &__title-bar
+        background-color: #505D6C
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0 10px
+        color: white
+        h5
+            line-height: 0
+            font-family: 'helvetica-neue-c-black', sans-serif
+            font-weight: normal
+            font-size: 16px
+    .oc-btn-close
+        background-color: transparent
+        border: none
+        display: inline-block
+        width: 30px
+        height: 30px
+    .oc-content-agenda__item
+        width: 88%
+        margin-left: 10px
+        margin-top: 10px
+    .oc-content-agenda__item__info
+        display: flex
+        align-items: flex-start
+        .type
+            margin-right: 5px
+
+#wg-calendario
+    .oc-widget-calendario__content
+        display: none
+    #wdg-calendario
+        display: block
+
+@media screen and ( max-width: 480px )
+    .oc-slick-agenda
+        &.oc-slick-theme
+            .slick-dots
+                bottom: -5px !important
+    .oc-slick-event-info
+        .slick-dots
+            transform: translateX(-35px)

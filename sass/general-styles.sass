@@ -25,7 +25,7 @@ p
     align-items: center
     justify-content: space-between
     width: 28px
-    height: 30px
+    height: 25px
     outline: none
     cursor: pointer
     .line
@@ -40,13 +40,18 @@ p
 .oc-slick-theme
     .slick-dots
         position: absolute
-        top: 25%
+        height: 100%
+        top: -10%
+        display: flex
+        flex-direction: column
+        justify-content: center
         right: 15px
+        padding: 0
         li
             list-style: none
             width: 9px
             height: 9px
-            margin: 18px 0
+            margin: 10px 0
             background-color: white
             border: 1px solid #505D6C
             cursor: pointer
@@ -57,3 +62,19 @@ p
             display: none
 
 
+@media screen and ( max-width: 480px )
+    .oc-slick-theme
+        .slick-dots
+            top: unset !important
+            bottom: -30px !important
+            flex-direction: row
+            height: auto
+            width: 100%
+            justify-content: center
+            right: 0
+            left: 0
+            padding: 0
+            margin: 0
+            li
+                margin: 10px
+    
