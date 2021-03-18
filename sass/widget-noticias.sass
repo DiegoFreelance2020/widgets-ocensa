@@ -2,6 +2,7 @@
     width: 670px
     height: 400px
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
+    overflow: hidden
     &__top-bar
         width: 100%
         background-color: #505D6C
@@ -21,38 +22,62 @@
     &__notices
         display: flex
         padding: 1em 1em
+        padding-left: 0
         &__left
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                right: 0
+                height: 100%
+                width: 1px
+                background-color: #95A6B1
+        &__item
             width: 50%
             padding: 0 1.5em
+            box-sizing: border-box
+            &.style-2
+                .oc-widget-content__notices__item__cont-sub__subtitle, .oc-widget-content__notices__item__cont__button a
+                    background-color: #FFCE00
+            h3
+                margin: 0
+                font-family: 'roboto-medium', sans-serif
+                font-weight: normal
+                font-size: 16px
             img
                 width: 100%
             p
-                font-size: .8em
+                font-size: 12px
                 color: #95A6B1
+                margin-bottom: 0
             &__cont-sub
                 display: flex
                 align-items: center
                 justify-content: space-between
+                margin-bottom: 3px
                 &__subtitle
                     background-color: #0EB414
                     padding: 0.2em 4em 0 0.3em
                     color: white
+                    font-size: 11px
                     font-family: "cabin-bold", sans-serif
                 &__date
                     font-family: "roboto-medium", sans-serif
                     color: #95A6B1
-                    font-size: .8em
+                    font-size: 9px
             &__cont
                 display: flex
                 align-items: center
                 justify-content: space-between
+                max-height: 51px
                 &__button
                     a
                         background-color: #0EB414
                         color: white
                         text-decoration: none
                         font-family: "cabin-bold", sans serif
-                        padding: .3em 2em
+                        padding: .3em 1em
                         border-radius: 25px
                         display: inline-block
                         font-size: .8em
@@ -60,14 +85,34 @@
                     display: flex
                     align-items: center
                     ul
+                        padding: 0
                         list-style: none
                         li
                             padding: 0
                             display: flex
                             align-items: center
+                            margin-left: 8px
                         span
                             font-size: 1.1em
                             font-family: "roboto-medium", sans-serif
                             color: #706F6F
                         img
                             width: 30px
+            
+.oc-slick-notices
+    .slick-dots
+        position: absolute
+        top: 25%
+        right: 15px
+        li
+            list-style: none
+            width: 9px
+            height: 9px
+            margin: 18px 0
+            background-color: white
+            border: 1px solid #505D6C
+            border-radius: 50%
+            &.slick-active
+                background-color: #505D6C
+        button
+            display: none

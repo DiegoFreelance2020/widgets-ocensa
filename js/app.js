@@ -13,4 +13,13 @@ $(document).ready(function() {
         verticalSwiping: true,
         infinite: false
     })
+
+    $('.oc-slick-notices').slick({
+        slidesToShow: 1,
+        vertical: true,
+        arrows: false,
+        dots: true,
+        verticalSwiping: true,
+        infinite: false
+    })
 })
