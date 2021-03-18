@@ -112,4 +112,8 @@ p {
   display: inline-block;
 }
 
+.spacing {
+  margin: 2em;
+}
+
 /*# sourceMappingURL=general-styles.css.map */

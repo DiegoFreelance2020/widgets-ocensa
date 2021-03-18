@@ -146,6 +146,7 @@
             background-image: url('../img/img-widget-calendario/icon-star.svg')
             background-position: center
             background-size: 5px
+            background-repeat: no-repeat
 
 .oc-slick-calendar
     position: relative
@@ -160,3 +161,80 @@
             left: 0
         &.arrow-right
             right: 0
+
+// Styles Agenda
+.oc-content-agenda
+    &__item
+        display: flex
+        position: relative
+        margin: .5em 0
+        padding-bottom: .5em
+        border-bottom: 1px solid rgba(#707070, .4 )
+        width: 95%
+        &__date
+            background-color: #505D6C
+            width: 23%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: white
+            font-family: 'helvetica-neue-condensed', sans-serif
+            hr
+                width: 50%
+                margin: 0
+            .day-name, .month
+                font-size: 12px
+            .day-number
+                font-size: 22px
+        &__info
+            font-family: 'roboto-c-regular', sans-serif
+            padding: 10px
+            .title
+                font-weight: normal
+                margin: 0
+                color: black
+                font-size: 15px
+            .time, .type
+                font-size: 12px
+                color: #8E9FAA
+                font-weight: normal
+            .type
+                display: flex
+                align-items: center
+                line-height: 3px
+                .dot
+                    width: 20px
+                    height: 20px
+                    margin-right: 5px
+                    &-especial
+                        &::before
+                            background-size: 16px
+
+                p
+                    font-family: 'roboto-c-regular', sans-serif
+    
+        .oc-more-info
+            background-color: transparent
+            border: none
+            position: absolute
+            right: 10px
+            top: calc( 50% - 15px )
+
+.oc-slick-agenda
+    .slick-dots
+        position: absolute
+        top: 25%
+        right: 0
+        li
+            list-style: none
+            width: 9px
+            height: 9px
+            margin: 18px 0
+            background-color: white
+            border: 1px solid #505D6C
+            border-radius: 50%
+            &.slick-active
+                background-color: #505D6C
+        button
+            display: none
