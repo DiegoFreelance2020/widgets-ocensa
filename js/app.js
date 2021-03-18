@@ -22,4 +22,13 @@ $(document).ready(function() {
         verticalSwiping: true,
         infinite: false
     })
+
+    $('.oc-slick-event-info').slick({
+        slidesToShow: 1,
+        vertical: true,
+        arrows: false,
+        dots: true,
+        verticalSwiping: true,
+        infinite: false
+    })
 })

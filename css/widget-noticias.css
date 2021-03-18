@@ -132,6 +132,7 @@
   margin: 18px 0;
   background-color: white;
   border: 1px solid #505D6C;
+  cursor: pointer;
   border-radius: 50%;
 }
 .oc-slick-notices .slick-dots li.slick-active {

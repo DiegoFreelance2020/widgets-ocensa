@@ -137,6 +137,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.oc-btn.btn-m-teams {
+  width: auto;
+  padding: 0 1em;
+  background-color: #505D6C;
+  display: inline-block;
+}
+.oc-btn.btn-m-teams:hover {
+  background-color: #2B5CDA;
 }
 
 .oc-btn-active {
@@ -256,12 +266,58 @@
 .oc-content-agenda__item__info .type p {
   font-family: "roboto-c-regular", sans-serif;
 }
+.oc-content-agenda__item__info .m-teams {
+  font-family: "cabin-bold", sans-serif;
+  color: #505D6C;
+  font-size: 15px;
+}
+.oc-content-agenda__item__info .room, .oc-content-agenda__item__info .n-guest {
+  font-size: 15px;
+  display: block;
+  line-height: 1.5em;
+}
+.oc-content-agenda__item__info .profile-guest ul {
+  padding: 0;
+  list-style: none;
+}
+.oc-content-agenda__item__info .profile-guest ul li {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+.oc-content-agenda__item__info .profile-guest ul li img {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+}
+.oc-content-agenda__item__info .profile-guest__info {
+  padding: 0 5px;
+  font-size: 10px;
+}
+.oc-content-agenda__item__info .profile-guest__info span {
+  display: block;
+  line-height: 13px;
+}
+.oc-content-agenda__item__info .profile-guest__info .name-guest {
+  font-weight: normal;
+  margin: 0px;
+  font-size: 13px;
+}
 .oc-content-agenda__item .oc-more-info {
   background-color: transparent;
   border: none;
   position: absolute;
   right: 10px;
   top: calc( 50% - 15px );
+  cursor: pointer;
+}
+.oc-content-agenda__item .oc-btn-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
 }
 
 .oc-slick-agenda .slick-dots {
@@ -277,12 +333,27 @@
   background-color: white;
   border: 1px solid #505D6C;
   border-radius: 50%;
+  cursor: pointer;
 }
 .oc-slick-agenda .slick-dots li.slick-active {
   background-color: #505D6C;
 }
 .oc-slick-agenda .slick-dots button {
   display: none;
+}
+
+.content-dia .oc-content-agenda__item {
+  width: 100%;
+  background-color: #ECEFF1;
+  border-bottom: none;
+}
+.content-dia .oc-content-agenda__item__info {
+  padding-top: 30px;
+}
+.content-dia .oc-content-agenda__item__date {
+  width: 40%;
+  display: inline-flex;
+  max-height: 85px;
 }
 
 /*# sourceMappingURL=widget-calendario.css.map */
