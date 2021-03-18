@@ -23,6 +23,7 @@
         display: flex
         padding: 1em 1em
         padding-left: 0
+                
         &__left
             position: relative
             &::before
@@ -98,8 +99,8 @@
                             color: #706F6F
                         img
                             width: 30px
-            
-.oc-slick-notices
+
+.oc-slick-theme
     .slick-dots
         position: absolute
         top: 25%
@@ -116,3 +117,26 @@
                 background-color: #505D6C
         button
             display: none
+
+.oc-widget-content
+    &__mobile
+        width: 335px
+        .oc-widget-content__notices
+            &__item    
+                width: 100%
+
+.oc-slick-notices__mobile
+    .slick-dots
+        width: 100%
+        justify-content: center
+        position: absolute
+        top: unset
+        bottom: -15px
+        right: 0
+        display: flex
+        li
+            margin: 5px
+    .oc-widget-content__notices__item.oc-widget-content__notices__left
+        &::before
+            width: 0px
+    
