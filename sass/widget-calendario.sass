@@ -116,6 +116,14 @@
     display: flex
     justify-content: center
     align-items: center
+    cursor: pointer
+    &.btn-m-teams
+        width: auto
+        padding: 0 1em
+        background-color: #505D6C
+        display: inline-block
+        &:hover
+            background-color: #2B5CDA   
 
 .oc-btn-active
     background-color: #2B5CDA
@@ -213,6 +221,36 @@
 
                 p
                     font-family: 'roboto-c-regular', sans-serif
+            .m-teams
+                font-family: 'cabin-bold', sans-serif
+                color: #505D6C
+                font-size: 15px
+            .room, .n-guest
+                font-size: 15px
+                display: block
+                line-height: 1.5em
+            .profile-guest
+                ul
+                    padding: 0
+                    list-style: none
+                    li
+                        display: flex
+                        align-items: flex-start
+                        align-items: center
+                        img
+                            display: inline-block
+                            width: 31px
+                            height: 31px
+                &__info
+                    padding: 0 5px
+                    font-size: 10px
+                    span
+                        display: block
+                        line-height: 13px
+                    .name-guest
+                        font-weight: normal
+                        margin: 0px
+                        font-size: 13px
     
         .oc-more-info
             background-color: transparent
@@ -220,6 +258,15 @@
             position: absolute
             right: 10px
             top: calc( 50% - 15px )
+            cursor: pointer
+        
+        .oc-btn-close
+            background-color: transparent
+            border: none
+            position: absolute
+            right: 0
+            top: 10px
+            cursor: pointer
 
 .oc-slick-agenda
     .slick-dots
@@ -234,7 +281,22 @@
             background-color: white
             border: 1px solid #505D6C
             border-radius: 50%
+            cursor: pointer
             &.slick-active
                 background-color: #505D6C
         button
             display: none
+
+
+// Styles dia
+.content-dia
+    .oc-content-agenda__item
+        width: 100%
+        background-color: #ECEFF1
+        border-bottom: none
+        &__info
+            padding-top:30px
+    .oc-content-agenda__item__date
+        width: 40%
+        display: inline-flex
+        max-height: 85px

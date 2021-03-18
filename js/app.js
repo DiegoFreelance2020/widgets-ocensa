@@ -31,4 +31,12 @@ $(document).ready(function() {
         verticalSwiping: false,
         infinite: false
     })
+    $('.oc-slick-event-info').slick({
+        slidesToShow: 1,
+        vertical: true,
+        arrows: false,
+        dots: true,
+        verticalSwiping: true,
+        infinite: false
+    })
 })

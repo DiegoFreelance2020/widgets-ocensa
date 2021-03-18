@@ -116,4 +116,26 @@ p {
   margin: 2em;
 }
 
+.oc-slick-theme .slick-dots {
+  position: absolute;
+  top: 25%;
+  right: 15px;
+}
+.oc-slick-theme .slick-dots li {
+  list-style: none;
+  width: 9px;
+  height: 9px;
+  margin: 18px 0;
+  background-color: white;
+  border: 1px solid #505D6C;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.oc-slick-theme .slick-dots li.slick-active {
+  background-color: #505D6C;
+}
+.oc-slick-theme .slick-dots button {
+  display: none;
+}
+
 /*# sourceMappingURL=general-styles.css.map */
