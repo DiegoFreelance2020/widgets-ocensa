@@ -78,6 +78,35 @@ $(document).ready(function () {
     ]
   });
 
+  $(".oc-slick-indicadores").slick({
+    slidesToShow: 4,
+    prevArrow:
+      "<img src='img/slick-arrow-left-02.svg' class='custom-slick-arrow arrow-left'>",
+    nextArrow:
+      "<img src='img/slick-arrow-right-02.svg' class='custom-slick-arrow arrow-right'>",
+    dots: true,
+    infinite: false,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 912,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+        }
+      },
+
+    ] 
+  });
+
 
 
   if (screen.width > 480) {
@@ -137,4 +166,5 @@ $(document).ready(function () {
     $('#wdg-agenda').slideDown()
     $('.oc-slick-theme').slick('refresh');
   })
+
 });
