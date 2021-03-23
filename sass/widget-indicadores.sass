@@ -1,0 +1,114 @@
+.oc-widget-indicadores
+    width: 100%
+    height: 170px
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
+    overflow: hidden
+    &__top-bar
+        width: 100%
+        background-color: #00AF00
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__left
+            display: flex
+            align-items: center
+            span
+                color: white
+                font-size: 1.5em
+                font-family: "cabin-bold", sans-serif
+        &__right
+            display: flex
+            align-items: center
+
+.oc-indicadores
+    margin-top: 1em
+    padding: 0 1.5em
+    &__item
+        display: flex !important
+        border-right: 1px solid #95A6B1
+        &-icon
+            text-align: end
+            width: 35%
+        &-img
+            margin: auto
+            display: initial !important
+            height: 57px
+            width: auto
+        &-number
+            color: #00AF00
+            font-family: 'roboto-regular'
+            font-size: 30px
+        &-info
+            text-align: center
+            width: 65%
+        &-text
+            color: #00AF00
+            font-family: 'roboto-regular'
+            font-size: 15px
+        &-desc
+            color: #000000
+            font-size: 9px
+            font-family: 'roboto-bold'
+            margin: 0
+    .slick-dots
+        position: absolute
+        display: flex
+        justify-content: center
+        bottom: -50px
+        padding: 0
+        width: 100%
+        left: 0
+        li
+            list-style: none
+            width: 9px
+            height: 9px
+            margin: 10px 0
+            background-color: white
+            border: 1px solid #00AF00
+            cursor: pointer
+            border-radius: 50%
+            margin: 0 .8em
+            &.slick-active
+                background-color: #00AF00
+        button
+            display: none
+    .custom-slick-arrow
+        position: absolute
+        top: 30%
+        z-index: 2
+        cursor: pointer
+        &.arrow-left
+            left: 15px
+        &.arrow-right
+            right: 15px
+
+@media (min-width: 769px)
+    .contendor-widget-indicadores
+        max-width: 1046px
+        max-height: 170px
+
+@media screen and ( max-width: 480px)
+    .oc-widget-indicadores
+        height: 226px
+    .oc-indicadores
+        padding: 0
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            right: 0
+            top: 0
+            height: 100%
+            width: 2px
+            background-color: #ffffff
+            z-index: 1
+        &__item
+            display: block !important
+            &-icon
+                width: 100%
+                text-align: center
+            &-info
+                width: 100%
+                text-align: center
+    
+    
