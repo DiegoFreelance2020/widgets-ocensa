@@ -85,8 +85,10 @@ $(document).ready(function () {
     nextArrow:
       "<img src='img/slick-arrow-right-02.svg' class='custom-slick-arrow arrow-right'>",
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 912,
