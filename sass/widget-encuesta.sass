@@ -5,6 +5,8 @@
         height: 400px
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
         overflow: hidden
+        &__body
+            padding: 1em 1.5em
         &__top-bar
             width: 100%
             background-color: #505D6C
@@ -22,26 +24,29 @@
                 display: flex
                 align-items: center
         &__date
-            padding: 0 1.5em
             p
                 text-align: center
-                margin-bottom: -5px
+                margin: 0
                 font-size: 13px
                 font-family: 'roboto-c-regular', sans-serif
             hr
                 width: 100%
-                color: black
+                color: rgba(#707070,.2)
         &__question
             p
                 text-align: left
                 font-size: 18px
                 font-family: 'roboto-c-bold', sans-serif
+                margin: 0
             hr
                 width: 100%
-                color: black
+                color: rgba(#707070,.2)
         &__options
             hr
-                margin-top: 1em
+                margin: .7em 0
+                color: rgba(#707070,.2)
+                &:last-child
+                    margin-bottom: 5px
             label
                 display: flex
                 align-items: center
@@ -92,6 +97,7 @@
                 text-align: center
                 font-size: 13px
                 font-family: 'roboto-c-regular', sans-serif
+                margin-top: 0
         &__buttons
             display: flex
             align-items: center
