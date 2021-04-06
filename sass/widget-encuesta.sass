@@ -114,3 +114,94 @@
                 font-family: 'cabin-bold', sans-serif
                 font-size: 13px
                 line-height: 1em
+    /*Segunda pantalla*/
+.oc-widget-encuesta
+    .oc-widget-encuesta__car
+        background-color: #F0F1F3
+    &__body-modal
+        padding: .8em
+        height: 100%
+    &__modal
+        position: relative
+        overflow: hidden
+        &-close
+            position: absolute
+            right: 10px
+            top: 10px
+            background-color: #ffffff
+            width: 19px
+            height: 19px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            border: 2px solid #C1CACF
+            font-family: 'roboto-bold'
+            color: #505D6C
+            cursor: pointer
+            z-index: 1
+        &-title p
+            font-family: 'roboto-c-bold'
+            color: #000000
+            font-size: 18px
+            margin-top: .4em
+        &-itembar
+            p
+                margin-bottom: .2em
+                font-size: 16px
+                font-family: 'roboto-c-regular'
+    &__modal-item
+        padding: 1em .7em
+    &__modal-content
+        width: 90%
+    .oc-progress-bar
+        width: 100%
+        height: 17px
+        background-color: #ffffff
+        border-radius: 20px
+        &__container
+            position: relative
+    .oc-progress
+        height: 17px
+        width: 0%
+        border-radius: 20px
+        position: absolute
+        top: 0
+        left: 0
+        font-size: 14px
+        color: white
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding-right: 5px
+        box-sizing: border-box
+        font-family: 'roboto-c-regular'
+        &__color-01
+            background-color: #FFDD00
+        &__color-02
+            background-color: #00AF00
+        &__color-03
+            background-color: #005FC8
+        &__color-04
+            background-color: #505D6C
+    .oc-profile-date
+        span
+            color: white
+            font-family: "cabin-bold", sans-serif
+            font-size: 23px
+    .slick-list
+        height: 320px !important
+    &__table
+        width: 100%
+        border-spacing: 0
+        td
+            border-top: 1px solid #707070
+            padding: .8em 0
+        .title
+            font-family: 'roboto-light'
+            color: #000000
+            font-size: 16px
+        .date
+            font-family: 'roboto-c-bold'
+            color: #000000
+            font-size: 18px

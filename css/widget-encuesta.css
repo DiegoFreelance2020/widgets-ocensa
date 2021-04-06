@@ -1,5 +1,6 @@
 .contenedor-widget-encuesta {
   width: 335px;
+  /*Segunda pantalla*/
 }
 .contenedor-widget-encuesta .oc-widget-encuesta {
   width: 100%;
@@ -134,6 +135,115 @@
   font-family: "cabin-bold", sans-serif;
   font-size: 13px;
   line-height: 1em;
+}
+
+.oc-widget-encuesta .oc-widget-encuesta__car {
+  background-color: #F0F1F3;
+}
+.oc-widget-encuesta__body-modal {
+  padding: 0.8em;
+  height: 100%;
+}
+.oc-widget-encuesta__modal {
+  position: relative;
+  overflow: hidden;
+}
+.oc-widget-encuesta__modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #C1CACF;
+  font-family: "roboto-bold";
+  color: #505D6C;
+  cursor: pointer;
+  z-index: 1;
+}
+.oc-widget-encuesta__modal-title p {
+  font-family: "roboto-c-bold";
+  color: #000000;
+  font-size: 18px;
+  margin-top: 0.4em;
+}
+.oc-widget-encuesta__modal-itembar p {
+  margin-bottom: 0.2em;
+  font-size: 16px;
+  font-family: "roboto-c-regular";
+}
+.oc-widget-encuesta__modal-item {
+  padding: 1em 0.7em;
+}
+.oc-widget-encuesta__modal-content {
+  width: 90%;
+}
+.oc-widget-encuesta .oc-progress-bar {
+  width: 100%;
+  height: 17px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.oc-widget-encuesta .oc-progress-bar__container {
+  position: relative;
+}
+.oc-widget-encuesta .oc-progress {
+  height: 17px;
+  width: 0%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-family: "roboto-c-regular";
+}
+.oc-widget-encuesta .oc-progress__color-01 {
+  background-color: #FFDD00;
+}
+.oc-widget-encuesta .oc-progress__color-02 {
+  background-color: #00AF00;
+}
+.oc-widget-encuesta .oc-progress__color-03 {
+  background-color: #005FC8;
+}
+.oc-widget-encuesta .oc-progress__color-04 {
+  background-color: #505D6C;
+}
+.oc-widget-encuesta .oc-profile-date span {
+  color: white;
+  font-family: "cabin-bold", sans-serif;
+  font-size: 23px;
+}
+.oc-widget-encuesta .slick-list {
+  height: 320px !important;
+}
+.oc-widget-encuesta__table {
+  width: 100%;
+  border-spacing: 0;
+}
+.oc-widget-encuesta__table td {
+  border-top: 1px solid #707070;
+  padding: 0.8em 0;
+}
+.oc-widget-encuesta__table .title {
+  font-family: "roboto-light";
+  color: #000000;
+  font-size: 16px;
+}
+.oc-widget-encuesta__table .date {
+  font-family: "roboto-c-bold";
+  color: #000000;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=widget-encuesta.css.map */
