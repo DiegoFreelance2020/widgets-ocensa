@@ -1,0 +1,110 @@
+.contenedor-widget-encuesta
+    width: 335px
+    .oc-widget-encuesta
+        width: 100%
+        height: 400px
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)
+        overflow: hidden
+        &__top-bar
+            width: 100%
+            background-color: #505D6C
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &__left
+                display: flex
+                align-items: center
+                span
+                    color: white
+                    font-size: 1.5em
+                    font-family: "cabin-bold", sans-serif
+            &__right
+                display: flex
+                align-items: center
+        &__date
+            padding: 0 1.5em
+            p
+                text-align: center
+                margin-bottom: -5px
+                font-size: 13px
+                font-family: 'roboto-c-regular', sans-serif
+            hr
+                width: 100%
+                color: black
+        &__question
+            p
+                text-align: left
+                font-size: 18px
+                font-family: 'roboto-c-bold', sans-serif
+            hr
+                width: 100%
+                color: black
+        &__options
+            hr
+                margin-top: 1em
+            label
+                display: flex
+                align-items: center
+                cursor: pointer
+                position: relative
+            .checkmark
+                position: absolute
+                width: 20px
+                height: 20px
+                background-color: red
+                border-radius: 50% 
+                left: 0
+                bottom: 0
+                cursor: pointer  
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    width: 0px
+                    height: 0px
+                    background: white
+                    border-radius: 50%
+                    transition: all .2s
+                &:hover, &.active
+                    &::before
+                       width: 10px
+                       height: 10px
+                       left: calc( 50% - (10px / 2) )
+                       top: calc( 50% - (10px / 2) ) 
+            input
+                position: relative
+                background: red
+                margin-right: 10px
+            .c-yellow
+                background-color: #FFDD00
+            .c-green
+                background-color: #00AF00
+            .c-blue
+                background-color: #005FC8
+            .c-gray
+                background-color: #505D6C
+            span
+                font-size: 15px
+                font-family: 'roboto-c-regular', sans-serif
+        &__finish-date
+            p
+                text-align: center
+                font-size: 13px
+                font-family: 'roboto-c-regular', sans-serif
+        &__buttons
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 10px
+            .btn-widgets
+                display: inline-block
+                margin: 5px
+                padding: .5em 1.5em
+                background-color: black
+                color: white
+                border-radius: 25px
+                text-decoration: none
+                font-family: 'cabin-bold', sans-serif
+                font-size: 13px
+                line-height: 1em
