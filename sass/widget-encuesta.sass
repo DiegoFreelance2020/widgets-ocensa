@@ -60,7 +60,7 @@
                 border-radius: 50% 
                 left: 0
                 bottom: 0
-                cursor: pointer  
+                cursor: pointer
                 &::before
                     content: ''
                     position: absolute
@@ -107,14 +107,21 @@
                 display: inline-block
                 margin: 5px
                 padding: .5em 1.5em
-                background-color: black
+                background-color: #ABBCC7
                 color: white
                 border-radius: 25px
                 text-decoration: none
                 font-family: 'cabin-bold', sans-serif
                 font-size: 13px
                 line-height: 1em
+                border: none
+                cursor: not-allowed
+                &.btn-active
+                    background-color: black
+                    cursor: pointer
     /*Segunda pantalla*/
+#wdg-results
+    display: none
 .oc-widget-encuesta
     .oc-widget-encuesta__car
         background-color: #F0F1F3

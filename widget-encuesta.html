@@ -27,7 +27,7 @@
                     </button>
                 </div>
             </div>
-            <div class="oc-widget-encuesta__body">
+            <div class="oc-widget-encuesta__body oc-widget-encuesta__box" id="wdg-question">
                 <div class="oc-widget-encuesta__date">
                     <p>Encuesta 7 abril</p>
                     <hr>
@@ -37,65 +37,61 @@
                     <hr>
                 </div>
                 <div class="oc-widget-encuesta__options">
-                    <div>
-                        <label for="territorio">
-                            <input type="radio" name="info-red" id="territorio">
-                            <span class="checkmark c-yellow "></span>
-                            <span>Sobre nuestra acción en el territorio</span></label>
-                    </div>
-                    <hr>
-                    <div>
-                        <label for="hidrocarburos">
-                            <input type="radio" name="info-red" id="hidrocarburos">
-                            <span class="checkmark c-green active"></span>
-                            <span>Noticias sobre el sector de hidrocarburos</span></label>
-                    </div>
-                    <hr>
-                    <div>
-                        <label for="buques">
-                            <input type="radio" name="info-red" id="buques">
-                            <span class="checkmark c-blue"></span>
-                            <span>Sobre la carga de buque tanques</span></label>
-                    </div>
-                    <hr>
-                    <div>
-                        <label for="otra">
-                            <input type="radio" name="info-red" id="otra">
-                            <span class="checkmark c-gray"></span>
-                            <span>Otra</span></label>
-                    </div>
-                    <hr>
+
+                    <form action="" id="form-vote">
+                        <div>
+                            <label for="territorio">
+                                <input type="radio" name="info-red" id="territorio" value="territorio">
+                                <span class="checkmark c-yellow "></span>
+                                <span>Sobre nuestra acción en el territorio</span></label>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="hidrocarburos">
+                                <input type="radio" name="info-red" id="hidrocarburos" value="hidrocarburos">
+                                <span class="checkmark c-green"></span>
+                                <span>Noticias sobre el sector de hidrocarburos</span></label>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="buques">
+                                <input type="radio" name="info-red" id="buques" value="buques">
+                                <span class="checkmark c-blue"></span>
+                                <span>Sobre la carga de buque tanques</span></label>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="otra">
+                                <input type="radio" name="info-red" id="otra" value="otra">
+                                <span class="checkmark c-gray"></span>
+                                <span>Otra</span></label>
+                        </div>
+                        <hr>
                 </div>
                 <div class="oc-widget-encuesta__finish-date">
                     <p>Cierre encuesta 12 abril</p>
                 </div>
                 <div class="oc-widget-encuesta__buttons">
-                    <a href="" class="btn-widgets">Votar</a>
-                    <a href="" class="btn-widgets">Ver resultado final</a>
+                    <button type="submit" class="btn-widgets btn-active vote">Votar</button>
+                    <button type="button" class="btn-widgets see-result">Ver resultado final</button>
                 </div>
+                </form>
             </div>
-        </div>
-    </div>
-    <br>
-    <div class="contenedor-widget-encuesta">
-        <div class="oc-widget-encuesta">
-            <div class="oc-widget-encuesta__top-bar">
-                <div class="oc-widget-encuesta__top-bar__left">
-                    <img src="img/img-widget-encuesta/icon-encuesta.svg" alt="">
-                    <span>Encuesta</span>
-                </div>
-                <div class="oc-widget-encuesta__top-bar__right">
-                    <button class="oc-button-close"><img src="img/button-close.svg" alt=""></button>
-                    <button class="oc-button-menu">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </button>
-                </div>
-            </div>
-            <div class="oc-widget-encuesta__body-modal">
+
+            <div class="oc-widget-encuesta__body-modal oc-widget-encuesta__box" id="wdg-results">
                 <div class="oc-widget-encuesta__modal">
-                    <span class="oc-widget-encuesta__modal-close">x</span>
+                    <span class="oc-widget-encuesta__modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8.391" height="8.391" viewBox="0 0 8.391 8.391">
+                            <g id="Grupo_2575" data-name="Grupo 2575" transform="translate(-1.421 4.196) rotate(-45)">
+                                <line id="Línea_1356" data-name="Línea 1356" y2="7.943" transform="translate(3.971)"
+                                    fill="none" stroke="#505d6c" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.962" />
+                                <line id="Línea_1357" data-name="Línea 1357" x1="7.943" transform="translate(0 3.971)"
+                                    fill="none" stroke="#505d6c" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.962" />
+                            </g>
+                        </svg>
+                    </span>
                     <div class="oc-widget-encuesta__car oc-slick-theme on-scroll-v">
                         <div class="oc-widget-encuesta__modal-item">
                             <div class="oc-widget-encuesta__modal-content">
@@ -170,11 +166,14 @@
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
     <script src="js/jquery.min-3.6.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/progressbar.js"></script>
-    
+    <script src="js/widget-encuesta.js"></script>
+
 </body>
 
 </html>
