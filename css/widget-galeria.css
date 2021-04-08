@@ -142,14 +142,11 @@
   }
 
   .oc-widget-galeria__body {
-    padding: 1em !important;
+    padding: 0.5em 1em !important;
     overflow: visible !important;
   }
   .oc-widget-galeria__item__footer {
     flex-direction: column;
-  }
-  .oc-widget-galeria .slick-track {
-    display: flex;
   }
 
   .oc-slick-galeria .slick-dots {
