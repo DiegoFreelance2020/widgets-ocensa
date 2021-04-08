@@ -111,7 +111,7 @@ $(document).ready(function () {
 
 
 
-  if (screen.width > 480) {
+  if (screen.width > 575.98) {
     const slider = $(".on-scroll-v");
 
     slider.on("wheel", function (e) {
