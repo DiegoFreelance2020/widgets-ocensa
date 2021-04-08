@@ -149,6 +149,7 @@
 
 .oc-widget-encuesta .oc-widget-encuesta__car {
   background-color: #F0F1F3;
+  min-height: 325px;
 }
 .oc-widget-encuesta__body-modal {
   padding: 0.8em;
@@ -179,6 +180,7 @@
   font-family: "roboto-c-bold";
   color: #000000;
   font-size: 18px;
+  margin: 0;
   margin-top: 0.4em;
 }
 .oc-widget-encuesta__modal-itembar p {
@@ -234,9 +236,6 @@
   font-family: "cabin-bold", sans-serif;
   font-size: 23px;
 }
-.oc-widget-encuesta .slick-list {
-  height: 320px !important;
-}
 .oc-widget-encuesta__table {
   width: 100%;
   border-spacing: 0;
@@ -254,6 +253,16 @@
   font-family: "roboto-c-bold";
   color: #000000;
   font-size: 18px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .oc-widget-encuesta__car .slick-dots {
+    bottom: -3px !important;
+  }
+
+  .oc-widget-encuesta__modal-content {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=widget-encuesta.css.map */
