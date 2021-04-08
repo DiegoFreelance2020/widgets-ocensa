@@ -103,6 +103,105 @@
         &__col
             width: calc( 100% / 2 )
 
+//Galeria Ampliación Foto
+.contenedor-widget-galeria-foto
+    background-color: #313A45
+    width: 100%
+    height: 100vh
+    position: relative
+    img
+        width: 70px
+        padding: 2.5em 2em
+    .oc-widget-galeria-foto
+        position: absolute
+        top: 30px
+        left: 120px
+        padding: 2.5em
+        width: 75%
+        height: 80vh
+        background-color: white
+        .close-button
+            position: absolute
+            top: -20px
+            right: -20px
+            width: 20px
+            height: 20px
+        &__content
+            border: solid 2px #CBD2D6
+            display: flex
+            &__left
+                width: 70%
+                .cont-img-left
+                    height: 420px
+                    .img-left
+                        padding: 0
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                &__desc
+                    padding: 1em
+                    margin-top: 0
+                    background-color: #ECEFF1
+                    .icon-img
+                        padding: 0
+                        width: 20px
+                        float: left
+                        margin-right: 5px
+                    p
+                        margin: 0
+                        font-family: 'roboto-c-light', sans-serif
+            &__right
+                width: 30%
+                &__social
+                    display: flex
+                    list-style: none
+                    align-items: right
+                    margin: 0
+                    padding: 0
+                    border-bottom: solid 2px #CBD2D6
+                    padding: 1em
+                    justify-content: flex-end
+                    li
+                        margin-left: 10px
+                        font-size: 15px
+                        display: flex
+                &__comments
+                    padding: 0
+                    margin-bottom: 20px
+                    .info-comment
+                        display: flex
+                        .img-user
+                            padding: .5em
+                            width: 49px
+                            height: 49px
+                            object-fit: cover
+                        .comment-user
+                            padding: .5em
+                            margin: 10px 10px 0 0
+                            background-color: #ECEFF1
+                            border-radius: 10px
+                            border: none
+                            outline: none
+                            &__input
+                                padding: .5em
+                                background-color: #ECEFF1
+                                border-radius: 10px
+                                border: none
+                                outline: none
+                            p
+                                font-family: 'roboto-c-light', sans-serif
+                                font-size: 14px
+                                line-height: 1.5em
+                            span
+                                font-family: 'roboto-c-bold', sans-serif
+                                font-size: 13px
+                    .date-comment
+                        font-family: 'roboto-c-bold', sans-serif
+                        font-size: 13px
+                        margin-left: 70px
+                        padding: 0
+                        
+
 @media (min-width: 992px)
     .content-lg
         display: block
