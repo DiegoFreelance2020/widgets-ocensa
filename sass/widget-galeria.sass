@@ -209,6 +209,7 @@
                 .oc-text-right
                     text-align: right
                 &__list-comments
+                    display: none
                     overflow-y: scroll
                     height: 92%
                 &__social
@@ -275,7 +276,37 @@
                         font-size: 13px
                         margin-left: 70px
                         padding: 0
-                        
+                &__list-share
+                    padding: 1em
+                    &__button
+                        text-align: center
+                        button
+                            border: none
+                            background-color: #005FC8
+                            cursor: pointer
+                            color: white
+                            border-radius: 50px
+                            font-family: 'cabin-bold', sans-serif
+                            font-size: 10px
+                            padding: .5em 1em
+                    &__user
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        border-bottom: 2px solid #CBD2D6
+                        padding-bottom: .5em
+                        margin-top: 1em
+                        &__profile
+                            display: flex
+                            align-items: center
+                            span
+                                display: block
+                        &__check
+                            width: 30px
+                            height: 30px
+                            border-radius: 50px
+                            border: 2px solid #CBD2D6
+
 .oc-scrollbar
     &::-webkit-scrollbar
         height: 4px
