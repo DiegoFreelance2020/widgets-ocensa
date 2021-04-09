@@ -278,6 +278,8 @@
                         padding: 0
                 &__list-share
                     padding: 1em
+                    overflow-y: scroll
+                    height: 82%
                     &__button
                         text-align: center
                         button
@@ -293,19 +295,47 @@
                         display: flex
                         align-items: center
                         justify-content: space-between
-                        border-bottom: 2px solid #CBD2D6
+                        border-bottom: 1px solid #CBD2D6
                         padding-bottom: .5em
-                        margin-top: 1em
+                        margin-top: .5em
+                        &.profile-active
+                            .oc-widget-galeria-foto__content__right__list-share__user__check
+                                width: 23px
+                                height: 23px
+                                border-radius: 50px
+                                border: 2px solid #005FC8
+                                background-color: #005FC8
+                                align-items: center
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                img
+                                    width: 13px
+                                    height: 13px
                         &__profile
                             display: flex
                             align-items: center
+                            .img-user
+                                width: 40px
+                                height: 40px
+                                margin-right: 10px
+                            .name
+                                font-family: "roboto-medium", sans-serif
+                                font-size: 13px
+                            .cargo
+                                font-family: 'roboto-c-regular', sans-serif
+                                font-size: 11px
+                                color: #505D6C
                             span
                                 display: block
                         &__check
-                            width: 30px
-                            height: 30px
+                            width: 23px
+                            height: 23px
                             border-radius: 50px
                             border: 2px solid #CBD2D6
+                            
+
+                                
 
 .oc-scrollbar
     &::-webkit-scrollbar
