@@ -394,7 +394,21 @@
 @media (min-width: 576px) and ( max-width: 991.98px)
     .content-md
         display: block
-    
+    .oc-widget-galeria-foto
+        &__content
+            flex-direction: column
+            &__left
+                width: 100% !important
+                height: 60% !important
+                .cont-img-left
+                    height: 70% !important
+                &__desc
+                    height: 30% !important
+            &__right
+                width: 100% !important
+                height: 40% !important
+        .slick-dots
+            width: 100% !important
 // Small Devices
 @media screen and ( max-width: 575.98px )
     .content-sm
