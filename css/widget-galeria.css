@@ -449,6 +449,10 @@
   border: 2px solid #CBD2D6;
 }
 
+.share-mobile {
+  display: none;
+}
+
 .oc-scrollbar::-webkit-scrollbar {
   height: 4px;
   width: 6px;
@@ -511,6 +515,9 @@
   }
   .contenedor-widget-galeria-foto .oc-slick-wdg-galeria {
     height: auto !important;
+  }
+  .contenedor-widget-galeria-foto .oc-slick-wdg-galeria .slick-dots {
+    width: 100% !important;
   }
 }
 
