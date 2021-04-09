@@ -130,37 +130,82 @@
   background-color: #313A45;
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contenedor-widget-galeria-foto img {
+.contenedor-widget-galeria-foto #galeria-logo-ocensa {
   width: 70px;
   padding: 2.5em 2em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto {
-  position: absolute;
-  top: 30px;
-  left: 120px;
+  position: relative;
   padding: 2.5em;
   width: 75%;
-  height: 80vh;
+  height: 70%;
   background-color: white;
+  border-top: 5px solid #005FC8;
 }
-.contenedor-widget-galeria-foto .oc-widget-galeria-foto .close-button {
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .galeria-close-button {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 10px;
+  right: 10px;
   width: 20px;
   height: 20px;
+  z-index: 3;
+  padding: 0 !important;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria {
+  height: 100%;
+  border: solid 2px #CBD2D6;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .slick-dots {
+  bottom: -50px;
+  left: 0;
+  height: auto !important;
+  flex-direction: row;
+  top: unset;
+  width: 70%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .slick-dots li {
+  margin: 0.6em;
+  border-color: #005FC8;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .slick-dots li.slick-active {
+  background-color: #005FC8;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .slick-list, .contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .slick-track {
+  height: 100%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .custom-slick-arrow {
+  cursor: pointer;
+  z-index: 3;
+  top: 50%;
+  position: absolute;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .custom-slick-arrow.arrow-left {
+  left: -30px;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria .custom-slick-arrow.arrow-right {
+  right: -30px;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content {
-  border: solid 2px #CBD2D6;
   display: flex;
+  height: 100%;
+  overflow: hidden;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left {
   width: 70%;
+  height: 100%;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .cont-img-left {
-  height: 420px;
+  height: 80%;
+  box-sizing: border-box;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .cont-img-left .img-left {
   padding: 0;
@@ -169,9 +214,13 @@
   object-fit: cover;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left__desc {
+  height: 20%;
   padding: 1em;
   margin-top: 0;
   background-color: #ECEFF1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left__desc .icon-img {
   padding: 0;
@@ -185,6 +234,28 @@
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right {
   width: 30%;
+  height: 100%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right .oc-btn-submit {
+  border: none;
+  background-color: #005FC8;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  font-family: "cabin-bold", sans-serif;
+  font-size: 10px;
+  padding: 0.5em 1em;
+  display: none;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right form {
+  width: 100%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right .oc-text-right {
+  text-align: right;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-comments {
+  overflow-y: scroll;
+  height: 92%;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social {
   display: flex;
@@ -195,6 +266,11 @@
   border-bottom: solid 2px #CBD2D6;
   padding: 1em;
   justify-content: flex-end;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social .indicator {
+  font-family: "roboto-medium";
+  color: #706F6F;
+  margin-left: 3px;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social li {
   margin-left: 10px;
@@ -221,28 +297,52 @@
   border-radius: 10px;
   border: none;
   outline: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments .info-comment .comment-user__input {
-  padding: 0.5em;
-  background-color: #ECEFF1;
-  border-radius: 10px;
+  background: transparent;
   border: none;
   outline: none;
+  width: 100%;
+  font-family: "roboto-light", sans-serif;
+  font-size: 14px;
+  max-height: 15px;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments .info-comment .comment-user__input::placeholder {
+  font-family: "roboto-light", sans-serif;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments .info-comment .comment-user p {
-  font-family: "roboto-c-light", sans-serif;
+  font-family: "roboto-light", sans-serif;
   font-size: 14px;
   line-height: 1.5em;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments .info-comment .comment-user span {
-  font-family: "roboto-c-bold", sans-serif;
+  font-family: "roboto-c-regular", sans-serif;
   font-size: 13px;
 }
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments.already .comment-user {
+  display: block;
+}
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments .date-comment {
-  font-family: "roboto-c-bold", sans-serif;
+  font-family: "roboto-c-regular", sans-serif;
   font-size: 13px;
   margin-left: 70px;
   padding: 0;
+}
+
+.oc-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 6px;
+}
+.oc-scrollbar::-webkit-scrollbar-thumb {
+  background: #005FC8;
+}
+.oc-scrollbar-vertical::-webkit-scrollbar {
+  width: 5px;
 }
 
 @media (min-width: 992px) {

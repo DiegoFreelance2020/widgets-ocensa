@@ -21,4 +21,23 @@ $(document).ready(function(){
             }
         ]
     })
+
+    $('.oc-slick-wdg-galeria').slick({
+        prevArrow:
+        "<img src='img/img-widget-galeria/icon/arrow-left-blue.svg' class='custom-slick-arrow arrow-left'>",
+        nextArrow:
+        "<img src='img/img-widget-galeria/icon/arrow-right-blue.svg' class='custom-slick-arrow arrow-right'>",
+        dots: true
+    })
+
+    $('.comment-user__input').focus(function() {
+        $('.oc-btn-submit').show()
+        $('.comment-user__input').css('max-height', '50px')
+    })
+
+    $('.comment-user__input').focusout(function() {
+        $('.oc-btn-submit').hide()
+        $('.comment-user__input').css('max-height', '15px')
+    })
+
 })
