@@ -50,8 +50,9 @@ $(document).ready(function(){
 
     $('.oc-widget-galeria__link').click(function(e) {
         let target = $(this).attr('data-widget')
-
         $(target).addClass('gallery-active')
+
+        $('.oc-box-list').fadeIn()
     })
 
     $('.galeria-close-button').click(function(e) {
@@ -61,16 +62,18 @@ $(document).ready(function(){
     })
 
     if(screen.width > 575.98){
-        $('#oc-btn-share').click(function(e) {
+        $('.oc-btn-share').click(function(e) {
             e.preventDefault()
+            let target = $(this).attr('data-target')
             $('.oc-box-list').fadeOut()
-            $('#oc-list-share').fadeIn()
+            $(target).fadeIn()
         })
     
-        $('#oc-btn-comments').click(function(e) {
+        $('.oc-btn-comments').click(function(e) {
             e.preventDefault()
+            let target = $(this).attr('data-target')
             $('.oc-box-list').fadeOut()
-            $('#oc-list-comments').fadeIn()
+            $(target).fadeIn()
         })
     }
 

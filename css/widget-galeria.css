@@ -521,21 +521,22 @@
     width: 90%;
     margin: auto;
     padding: 2em 1em;
-    height: auto;
+    height: 700px;
   }
   .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content {
     flex-direction: column;
   }
   .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left {
     width: 100%;
-    height: auto;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .cont-img-left {
+    height: 40%;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left__desc {
+    height: 60%;
   }
   .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right {
     width: 100%;
-    height: auto;
-  }
-  .contenedor-widget-galeria-foto .oc-slick-wdg-galeria {
-    height: auto !important;
   }
   .contenedor-widget-galeria-foto .oc-slick-wdg-galeria .slick-dots {
     width: 100% !important;
