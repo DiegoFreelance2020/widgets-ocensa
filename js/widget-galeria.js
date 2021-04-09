@@ -65,6 +65,8 @@ $(document).ready(function(){
         $('.oc-btn-share').click(function(e) {
             e.preventDefault()
             let item = $(this).parent().parent()
+            let list = $(this).parent()
+            list.addClass('share-active')
             let target = $(this).attr('data-target')
             $(item).find('.oc-box-list').fadeOut()
             $(target).fadeIn()
@@ -72,7 +74,10 @@ $(document).ready(function(){
     
         $('.oc-btn-comments').click(function(e) {
             e.preventDefault()
+
             let item = $(this).parent().parent()
+            let list = $(this).parent()
+            list.removeClass('share-active')
             let target = $(this).attr('data-target')
             $(item).find('.oc-box-list').fadeOut()
             $(target).fadeIn()

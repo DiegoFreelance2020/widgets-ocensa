@@ -243,6 +243,22 @@
                     border-bottom: solid 2px #CBD2D6
                     padding: 1em
                     justify-content: flex-end
+                    position: relative
+                    &::before
+                        position: absolute
+                        content: ""
+                        width: 10px
+                        height: 10px
+                        transform: rotate(45deg)
+                        bottom: -5px
+                        right: 70px
+                        background-color: white
+                        border-top: solid 2px #CBD2D6
+                        border-left: solid 2px #CBD2D6
+                        box-sizing: border-box
+                    &.share-active
+                        &::before
+                            right: 30px              
                     .indicator
                         font-family: 'roboto-medium'
                         color: #706F6F
