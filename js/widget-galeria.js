@@ -49,12 +49,12 @@ $(document).ready(function(){
     })
 
     $('.oc-widget-galeria__link').click(function(e) {
-        let target = $('.oc-widget-galeria__link').attr('data-widget')
+        let target = $(this).attr('data-widget')
 
         $(target).addClass('gallery-active')
     })
 
-    $('#galeria-close-button').click(function(e) {
+    $('.galeria-close-button').click(function(e) {
         e.preventDefault()
         $('.contenedor-widget-galeria-foto').removeClass('gallery-active')
         

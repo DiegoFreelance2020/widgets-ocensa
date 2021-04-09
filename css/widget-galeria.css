@@ -241,6 +241,25 @@
   margin: 0;
   font-family: "roboto-c-light", sans-serif;
 }
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama {
+  height: 100%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama .fotorama__wrap {
+  height: 100%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama .fotorama__wrap .fotorama__stage {
+  height: 80% !important;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama .fotorama__wrap .fotorama__stage img {
+  height: 100% !important;
+  object-fit: cover;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama .fotorama__wrap .fotorama__nav-wrap {
+  height: 20%;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left .fotorama .fotorama__thumb-border {
+  border-color: #005FC8;
+}
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right {
   width: 30%;
   height: 100%;
