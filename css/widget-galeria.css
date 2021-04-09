@@ -263,6 +263,10 @@
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right {
   width: 30%;
   height: 100%;
+  overflow: hidden;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right .oc-box-list {
+  box-sizing: border-box;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right .oc-btn-submit {
   border: none;
@@ -284,6 +288,7 @@
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-comments {
   overflow-y: scroll;
   height: 92%;
+  width: 100%;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social {
   display: flex;
@@ -371,6 +376,77 @@
   font-size: 13px;
   margin-left: 70px;
   padding: 0;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share {
+  padding: 1em;
+  overflow-y: scroll;
+  height: 82%;
+  width: 100%;
+  display: none;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__button {
+  text-align: center;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__button button {
+  border: none;
+  background-color: #005FC8;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  font-family: "cabin-bold", sans-serif;
+  font-size: 10px;
+  padding: 0.5em 1em;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #CBD2D6;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check {
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  border: 2px solid #005FC8;
+  background-color: #005FC8;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check img {
+  width: 13px;
+  height: 13px;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile {
+  display: flex;
+  align-items: center;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile .img-user {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile .name {
+  font-family: "roboto-medium", sans-serif;
+  font-size: 13px;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile .cargo {
+  font-family: "roboto-c-regular", sans-serif;
+  font-size: 11px;
+  color: #505D6C;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile span {
+  display: block;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__check {
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  border: 2px solid #CBD2D6;
 }
 
 .oc-scrollbar::-webkit-scrollbar {

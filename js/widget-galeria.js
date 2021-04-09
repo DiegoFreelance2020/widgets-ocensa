@@ -60,4 +60,25 @@ $(document).ready(function(){
         
     })
 
+    $('#oc-btn-share').click(function(e) {
+        e.preventDefault()
+        $('.oc-box-list').fadeOut()
+        $('#oc-list-share').fadeIn()
+    })
+
+    $('#oc-btn-comments').click(function(e) {
+        e.preventDefault()
+        $('.oc-box-list').fadeOut()
+        $('#oc-list-comments').fadeIn()
+    })
+
+
+    $('.oc-widget-galeria-foto__content__right__list-share__user').click(function(e) {
+        e.preventDefault()
+        if($(this).hasClass('profile-active')){
+            $(this).removeClass('profile-active')
+        } else {
+            $(this).addClass('profile-active')
+        }
+    })
 })

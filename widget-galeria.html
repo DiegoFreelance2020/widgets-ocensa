@@ -46,7 +46,7 @@
                     <div class="oc-widget-galeria-foto__content__right">
                         <ul class="oc-widget-galeria-foto__content__right__social">
                             <!-- Icon Like -->
-                            <li>
+                            <li id="oc-btn-like">
                                 <svg id="icon-like-2" xmlns="http://www.w3.org/2000/svg" width="27" height="24"
                                     viewBox="0 0 27 24">
                                     <g id="Rectangle_3081">
@@ -66,7 +66,7 @@
                             </li>
 
                             <!-- Icon comentario -->
-                            <li>
+                            <li id="oc-btn-comments">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17.914" height="18.2"
                                     viewBox="0 0 17.914 18.2">
                                     <g id="Group_9237" transform="translate(-0.486 -2.1)">
@@ -128,7 +128,7 @@
                             </li>
 
                             <!-- Icon compartir -->
-                            <li>
+                            <li id="oc-btn-share">
                                 <svg id="icon-compartir-2" xmlns="http://www.w3.org/2000/svg" width="20" height="24"
                                     viewBox="0 0 20 24">
                                     <rect id="Rectangle_3079" width="20" height="24" fill="none" />
@@ -158,7 +158,7 @@
                             </li>
                         </ul>
 
-                        <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar">
+                        <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar oc-box-list" id="oc-list-comments">
                             <div class="oc-widget-galeria-foto__content__right__comments">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10604.png" alt="" class="img-user">
@@ -179,7 +179,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cardenas</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                            nonummy
                                             nibh
                                             euismod tincidunt ut laoreet.</p>
                                     </div>
@@ -192,7 +193,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrea Pachón</span>
-                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                            volutpat.
                                         </p>
                                     </div>
                                 </div>
@@ -204,7 +206,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Rodrigo Cardona</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                            dolore
                                             magna
                                             aliquam erat.</p>
                                     </div>
@@ -217,7 +220,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10615.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Camila Rodríguez</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                            dolore
                                             magna
                                             aliquam erat.</p>
                                     </div>
@@ -230,7 +234,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrés Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                            dolore
                                             magna
                                             aliquam erat.</p>
                                     </div>
@@ -243,7 +248,8 @@
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                            dolore
                                             magna
                                             aliquam erat.</p>
                                     </div>
@@ -251,6 +257,98 @@
                                 <span class="date-comment">1 Año</span>
                             </div>
                         </div>
+
+                        <div class="oc-widget-galeria-foto__content__right__list-share oc-scrollbar oc-box-list" id="oc-list-share">
+                            <div class="oc-widget-galeria-foto__content__right__list-share__button">
+                                <button>Compartir</button>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user profile-active">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10604.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Camilo Duarte</span>
+                                        <span class="cargo">IMTE</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10609.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Natalia Cardenas</span>
+                                        <span class="cargo">IMTE</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Andrea Pachón</span>
+                                        <span class="cargo">IMTE</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10604.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Rodrigo Cardona</span>
+                                        <span class="cargo">Proyectos</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Andres Cardenas</span>
+                                        <span class="cargo">Organización y talento</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Mario Pulido</span>
+                                        <span class="cargo">Finanzas</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="oc-widget-galeria-foto__content__right__list-share__user">
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__profile">
+                                    <img src="img/img-widget-galeria/fotos/Group 10604.png" alt="" class="img-user">
+                                    <div>
+                                        <span class="name">Jose Muñoz</span>
+                                        <span class="cargo">Riesgos y cumplimiento</span>
+                                    </div>
+                                </div>
+                                <div class="oc-widget-galeria-foto__content__right__list-share__user__check">
+                                    <img src="img/img-widget-galeria/icon/Trazado 9367.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -501,16 +599,22 @@
                     <!-- Content left -->
                     <div class="oc-widget-galeria-foto__content__left">
                         <div class="cont-img-left">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QIz1jrTlXXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QIz1jrTlXXk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <div class="oc-widget-galeria-foto__content__left__desc">
                             <article>
                                 <img src="img/img-widget-galeria/icon/icon-photo.svg" alt="" class="icon-img">
-                            <p><span style="color: #005FC8;">01.03.2020 /</span><span style="font-weight: bold;">Lorem
-                                    ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                                commodo.</p>
+                                <p><span style="color: #005FC8;">01.03.2020 /</span><span
+                                        style="font-weight: bold;">Lorem
+                                        ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim
+                                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                                    ea
+                                    commodo.</p>
                             </article>
                         </div>
                     </div>
@@ -627,7 +731,7 @@
                                 </span>
                             </li>
                         </ul>
-                        
+
                         <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar">
                             <div class="oc-widget-galeria-foto__content__right__comments">
                                 <div class="info-comment">
@@ -643,72 +747,78 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cardenas</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
                                             euismod tincidunt ut laoreet.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Día</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrea Pachón</span>
-                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        </p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Rodrigo Cardona</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">15 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10615.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Camila Rodríguez</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Mes</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrés Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Meses</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
@@ -729,11 +839,14 @@
                         <div class="oc-widget-galeria-foto__content__left__desc">
                             <article>
                                 <img src="img/img-widget-galeria/icon/icon-photo.svg" alt="" class="icon-img">
-                            <p><span style="color: #005FC8;">01.03.2020 /</span><span style="font-weight: bold;">Lorem
-                                    ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                                commodo.</p>
+                                <p><span style="color: #005FC8;">01.03.2020 /</span><span
+                                        style="font-weight: bold;">Lorem
+                                        ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim
+                                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                                    ea
+                                    commodo.</p>
                             </article>
                         </div>
                     </div>
@@ -850,7 +963,7 @@
                                 </span>
                             </li>
                         </ul>
-                        
+
                         <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar">
                             <div class="oc-widget-galeria-foto__content__right__comments">
                                 <div class="info-comment">
@@ -866,72 +979,78 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cardenas</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
                                             euismod tincidunt ut laoreet.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Día</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrea Pachón</span>
-                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        </p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Rodrigo Cardona</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">15 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10615.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Camila Rodríguez</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Mes</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrés Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Meses</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
@@ -965,11 +1084,14 @@
                         <div class="oc-widget-galeria-foto__content__left__desc">
                             <article>
                                 <img src="img/img-widget-galeria/icon/icon-photo.svg" alt="" class="icon-img">
-                            <p><span style="color: #005FC8;">01.03.2020 /</span><span style="font-weight: bold;">Lorem
-                                    ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                                commodo.</p>
+                                <p><span style="color: #005FC8;">01.03.2020 /</span><span
+                                        style="font-weight: bold;">Lorem
+                                        ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim
+                                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                                    ea
+                                    commodo.</p>
                             </article>
                         </div>
                     </div>
@@ -1086,7 +1208,7 @@
                                 </span>
                             </li>
                         </ul>
-                        
+
                         <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar">
                             <div class="oc-widget-galeria-foto__content__right__comments">
                                 <div class="info-comment">
@@ -1102,72 +1224,78 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cardenas</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
                                             euismod tincidunt ut laoreet.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Día</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrea Pachón</span>
-                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        </p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Rodrigo Cardona</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">15 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10615.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Camila Rodríguez</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Mes</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrés Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Meses</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
@@ -1188,11 +1316,14 @@
                         <div class="oc-widget-galeria-foto__content__left__desc">
                             <article>
                                 <img src="img/img-widget-galeria/icon/icon-photo.svg" alt="" class="icon-img">
-                            <p><span style="color: #005FC8;">01.03.2020 /</span><span style="font-weight: bold;">Lorem
-                                    ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                                commodo.</p>
+                                <p><span style="color: #005FC8;">01.03.2020 /</span><span
+                                        style="font-weight: bold;">Lorem
+                                        ipsum dolor sit amet,</span> consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim
+                                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                                    ea
+                                    commodo.</p>
                             </article>
                         </div>
                     </div>
@@ -1309,7 +1440,7 @@
                                 </span>
                             </li>
                         </ul>
-                        
+
                         <div class="oc-widget-galeria-foto__content__right__list-comments oc-scrollbar">
                             <div class="oc-widget-galeria-foto__content__right__comments">
                                 <div class="info-comment">
@@ -1325,72 +1456,78 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cardenas</span>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                            nibh
                                             euismod tincidunt ut laoreet.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Día</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10613.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrea Pachón</span>
-                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p>Monummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        </p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10611.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Rodrigo Cardona</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">15 Días</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10615.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Camila Rodríguez</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">1 Mes</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10617.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Andrés Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
                                 <span class="date-comment">5 Meses</span>
                             </div>
-    
+
                             <div class="oc-widget-galeria-foto__content__right__comments already">
                                 <div class="info-comment">
                                     <img src="img/img-widget-galeria/fotos/Group 10606.png" alt="" class="img-user">
                                     <div class="comment-user">
                                         <span>Natalia Cárdenas</span>
-                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        <p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna
                                             aliquam erat.</p>
                                     </div>
                                 </div>
