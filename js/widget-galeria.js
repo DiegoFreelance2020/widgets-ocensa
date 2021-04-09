@@ -27,7 +27,15 @@ $(document).ready(function(){
         "<img src='img/img-widget-galeria/icon/arrow-left-blue.svg' class='custom-slick-arrow arrow-left'>",
         nextArrow:
         "<img src='img/img-widget-galeria/icon/arrow-right-blue.svg' class='custom-slick-arrow arrow-right'>",
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 575.98,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     })
 
     $('.comment-user__input').focus(function() {
@@ -38,6 +46,18 @@ $(document).ready(function(){
     $('.comment-user__input').focusout(function() {
         $('.oc-btn-submit').hide()
         $('.comment-user__input').css('max-height', '15px')
+    })
+
+    $('.oc-widget-galeria__link').click(function(e) {
+        let target = $('.oc-widget-galeria__link').attr('data-widget')
+
+        $(target).addClass('gallery-active')
+    })
+
+    $('#galeria-close-button').click(function(e) {
+        e.preventDefault()
+        $('.contenedor-widget-galeria-foto').removeClass('gallery-active')
+        
     })
 
 })

@@ -113,6 +113,13 @@
     display: flex
     justify-content: center
     align-items: center
+    transform: translateY(-200%)
+    opacity: 0
+    transition: all 1s
+    box-sizing: border-box
+    &.gallery-active
+        transform: translateY(0)
+        opacity: 1
     #galeria-logo-ocensa
         width: 70px
         padding: 2.5em 2em
@@ -134,6 +141,7 @@
             height: 20px
             z-index: 3
             padding: 0 !important
+            cursor: pointer
         .oc-slick-wdg-galeria
             height: 100%
             border: solid 2px #CBD2D6
@@ -228,6 +236,17 @@
                         margin-left: 10px
                         font-size: 15px
                         display: flex
+                        align-items: center
+                        cursor: pointer
+                        svg
+                            height: 25px
+                            &:hover
+                                path
+                                    fill: #005FC8
+                            &#icon-compartir-2
+                                &:hover
+                                    circle
+                                        stroke: #005FC8
                 &__comments
                     padding: 0
                     margin-bottom: 20px
@@ -286,16 +305,17 @@
         &::-webkit-scrollbar
             width: 5px
 
+// Large Devices
 @media (min-width: 992px)
     .content-lg
-        display: block
-    
+        display: block   
 
+// Medium Devices
 @media (min-width: 576px) and ( max-width: 991.98px)
     .content-md
         display: block
     
-
+// Small Devices
 @media screen and ( max-width: 575.98px )
     .content-sm
         display: block
@@ -309,4 +329,23 @@
     .oc-slick-galeria
         .slick-dots
             bottom: -30px !important
+    .contenedor-widget-galeria-foto 
+        height: 100vh
+        padding: 2em
+        overflow-y: scroll
+        .oc-widget-galeria-foto
+            width: 90%
+            margin: auto
+            padding: 2em 1em
+            height: auto
+            &__content
+                flex-direction: column
+                &__left
+                    width: 100%
+                    height: auto
+                &__right
+                    width: 100%
+                    height: auto
+        .oc-slick-wdg-galeria
+            height: auto !important
     

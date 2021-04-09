@@ -135,6 +135,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-200%);
+  opacity: 0;
+  transition: all 1s;
+  box-sizing: border-box;
+}
+.contenedor-widget-galeria-foto.gallery-active {
+  transform: translateY(0);
+  opacity: 1;
 }
 .contenedor-widget-galeria-foto #galeria-logo-ocensa {
   width: 70px;
@@ -159,6 +167,7 @@
   height: 20px;
   z-index: 3;
   padding: 0 !important;
+  cursor: pointer;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto .oc-slick-wdg-galeria {
   height: 100%;
@@ -276,6 +285,17 @@
   margin-left: 10px;
   font-size: 15px;
   display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social li svg {
+  height: 25px;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social li svg:hover path {
+  fill: #005FC8;
+}
+.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__social li svg#icon-compartir-2:hover circle {
+  stroke: #005FC8;
 }
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__comments {
   padding: 0;
@@ -370,6 +390,32 @@
 
   .oc-slick-galeria .slick-dots {
     bottom: -30px !important;
+  }
+
+  .contenedor-widget-galeria-foto {
+    height: 100vh;
+    padding: 2em;
+    overflow-y: scroll;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto {
+    width: 90%;
+    margin: auto;
+    padding: 2em 1em;
+    height: auto;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content {
+    flex-direction: column;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__left {
+    width: 100%;
+    height: auto;
+  }
+  .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right {
+    width: 100%;
+    height: auto;
+  }
+  .contenedor-widget-galeria-foto .oc-slick-wdg-galeria {
+    height: auto !important;
   }
 }
 
