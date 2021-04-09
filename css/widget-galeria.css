@@ -282,9 +282,6 @@
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right form {
   width: 100%;
 }
-.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right .oc-text-right {
-  text-align: right;
-}
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-comments {
   overflow-y: scroll;
   height: 92%;
@@ -406,21 +403,6 @@
   margin-top: 0.5em;
   cursor: pointer;
 }
-.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check {
-  width: 23px;
-  height: 23px;
-  border-radius: 50px;
-  border: 2px solid #005FC8;
-  background-color: #005FC8;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check img {
-  width: 13px;
-  height: 13px;
-}
 .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content__right__list-share__user__profile {
   display: flex;
   align-items: center;
@@ -449,7 +431,35 @@
   border: 2px solid #CBD2D6;
 }
 
-.share-mobile {
+.oc-text-right {
+  text-align: right;
+}
+
+.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check {
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  border: 2px solid #005FC8;
+  background-color: #005FC8;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-active .oc-widget-galeria-foto__content__right__list-share__user__check img {
+  width: 13px;
+  height: 13px;
+}
+
+.oc-share-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: white;
+  padding: 1em;
+  height: 100%;
   display: none;
 }
 
@@ -497,6 +507,8 @@
 }
 @media screen and (max-width: 575.98px) {
   .content-sm {
+    padding: 0 10px;
+    box-sizing: border-box;
     display: block;
   }
 
@@ -522,6 +534,7 @@
     margin: auto;
     padding: 2em 1em;
     height: 700px;
+    overflow: hidden;
   }
   .contenedor-widget-galeria-foto .oc-widget-galeria-foto__content {
     flex-direction: column;

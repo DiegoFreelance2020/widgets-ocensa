@@ -230,8 +230,6 @@
                     display: none
                 form
                     width: 100%
-                .oc-text-right
-                    text-align: right
                 &__list-comments
                     overflow-y: scroll
                     height: 92%
@@ -336,20 +334,6 @@
                         padding-bottom: .5em
                         margin-top: .5em
                         cursor: pointer
-                        &.profile-active
-                            .oc-widget-galeria-foto__content__right__list-share__user__check
-                                width: 23px
-                                height: 23px
-                                border-radius: 50px
-                                border: 2px solid #005FC8
-                                background-color: #005FC8
-                                align-items: center
-                                display: flex
-                                justify-content: center
-                                align-items: center
-                                img
-                                    width: 13px
-                                    height: 13px
                         &__profile
                             display: flex
                             align-items: center
@@ -371,11 +355,33 @@
                             height: 23px
                             border-radius: 50px
                             border: 2px solid #CBD2D6
-                            
-
-.share-mobile
-    display: none                         
-
+.oc-text-right
+    text-align: right
+    
+.profile-active
+    .oc-widget-galeria-foto__content__right__list-share__user__check
+        width: 23px
+        height: 23px
+        border-radius: 50px
+        border: 2px solid #005FC8
+        background-color: #005FC8
+        align-items: center
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 13px
+            height: 13px
+.oc-share-mobile
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 5
+    background: white
+    padding: 1em
+    height: 100%
+    display: none
 .oc-scrollbar
     &::-webkit-scrollbar
         height: 4px
@@ -413,6 +419,8 @@
 // Small Devices
 @media screen and ( max-width: 575.98px )
     .content-sm
+        padding: 0 10px
+        box-sizing: border-box 
         display: block
     .oc-widget-galeria
         &__body
@@ -433,6 +441,7 @@
             margin: auto
             padding: 2em 1em
             height: 700px
+            overflow: hidden
             &__content
                 flex-direction: column
                 &__left

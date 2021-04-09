@@ -64,16 +64,41 @@ $(document).ready(function(){
     if(screen.width > 575.98){
         $('.oc-btn-share').click(function(e) {
             e.preventDefault()
+            let item = $(this).parent().parent()
             let target = $(this).attr('data-target')
-            $('.oc-box-list').fadeOut()
+            $(item).find('.oc-box-list').fadeOut()
             $(target).fadeIn()
         })
     
         $('.oc-btn-comments').click(function(e) {
             e.preventDefault()
+            let item = $(this).parent().parent()
             let target = $(this).attr('data-target')
-            $('.oc-box-list').fadeOut()
+            $(item).find('.oc-box-list').fadeOut()
             $(target).fadeIn()
+        })
+    } else {
+        $('.oc-btn-share').click(function(e) {
+            e.preventDefault()
+
+            let target = $(this).attr('data-target')
+            $('.oc-share-mobile').html('<div class="oc-text-right"><img src="img/img-widget-galeria/boton/boton–cerrar.svg" alt="" class="share-close-button"></div>')
+            $('.oc-share-mobile').append($(target).html())
+            $('.oc-share-mobile').slideDown()
+
+            $('.oc-share-mobile .oc-widget-galeria-foto__content__right__list-share__user').click(function(e) {
+                e.preventDefault()
+                if($(this).hasClass('profile-active')){
+                    $(this).removeClass('profile-active')
+                } else {
+                    $(this).addClass('profile-active')
+                }
+            })
+
+            $('.share-close-button').click(function(e) {
+                e.preventDefault()
+                $('.oc-share-mobile').slideUp()
+            })
         })
     }
 
