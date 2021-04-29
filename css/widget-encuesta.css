@@ -256,7 +256,6 @@
 }
 
 .oc-widget-encuesta-thanks {
-  height: 100%;
   background-color: #ECEFF1;
   margin: 1em;
   padding: 1em;
@@ -292,13 +291,12 @@
   margin: 10px;
 }
 .oc-widget-encuesta-thanks button {
-  margin-top: 10px;
   background-color: #19A500;
   border-radius: 25px;
   color: white;
   border: none;
   font-family: "cabin-bold", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   padding: 0.3em 1.5em;
 }
 
