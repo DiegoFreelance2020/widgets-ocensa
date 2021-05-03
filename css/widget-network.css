@@ -184,6 +184,9 @@
   .oc-widget-network__content__slider .slick-dots {
     background-color: white;
   }
+  .oc-widget-network__content__slider .oc-item {
+    padding: 0.8em 0;
+  }
 }
 
 /*# sourceMappingURL=widget-network.css.map */
