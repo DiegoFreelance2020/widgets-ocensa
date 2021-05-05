@@ -115,6 +115,12 @@
 .oc-widget-network__content__slider .oc-item-state.occupied .oc-item-state__text {
   color: #FFCE00;
 }
+.oc-widget-network__content__slider .oc-item-state.disconnected .oc-item-state__circle {
+  background-color: #6D7783;
+}
+.oc-widget-network__content__slider .oc-item-state.disconnected .oc-item-state__text {
+  color: #6D7783;
+}
 .oc-widget-network__content__slider .oc-item-current-date {
   font-family: "roboto-c-regular";
   font-size: 10px;
