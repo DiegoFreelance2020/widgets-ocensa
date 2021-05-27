@@ -27,4 +27,14 @@ $(document).ready(function() {
         $(target).slideDown()
         $(target).find('.oc-widget-network__content__slider').slick('refresh');
     })
+
+    $('.oc-item__radio-button').click(function(e) {
+        e.preventDefault()
+
+        if($(this).hasClass('active')){
+          $(this).removeClass('active')
+        } else {
+          $(this).addClass('active')
+        }
+    })
 })

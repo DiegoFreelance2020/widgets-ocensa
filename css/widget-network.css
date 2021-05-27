@@ -8,6 +8,10 @@
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+.oc-widget-network .oc-panel-agregar {
+  background-color: #F0F1F3;
+  height: 100%;
+}
 .oc-widget-network__top-bar {
   background-color: #505D6C;
   display: flex;
@@ -35,7 +39,39 @@
   justify-content: center;
 }
 .oc-widget-network__content__buttons button {
-  width: 100px;
+  width: auto !important;
+  min-width: 80px !important;
+  padding: 3px 10px !important;
+  display: inline-block;
+}
+.oc-widget-network__content__buscador {
+  padding-top: 0.5px;
+  text-align: center;
+}
+.oc-widget-network__content__buscador .oc-form-group {
+  display: flex;
+  padding: 1em;
+  padding-bottom: 5px !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-widget-network__content__buscador .oc-form-control {
+  background-color: white;
+  border: none;
+  width: 85%;
+  display: inline-block;
+  height: 30px;
+  font-size: 15px;
+  font-family: "roboto-c-regular", sans-serif;
+  outline: none;
+  padding: 0px 10px;
+}
+.oc-widget-network__content__buscador__close {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
 }
 .oc-widget-network__content__slider {
   margin-top: 10px;
@@ -129,6 +165,46 @@
   right: 0;
   top: 1.8em;
 }
+.oc-widget-network__content__agregar .oc-item {
+  position: relative;
+  padding: 0.5em 0;
+}
+.oc-widget-network__content__agregar .oc-item:first-child {
+  border-top: 1px solid rgba(112, 112, 112, 0.3) !important;
+}
+.oc-widget-network__content__agregar .oc-item:last-child {
+  border-bottom: none !important;
+}
+.oc-widget-network__content__agregar .oc-item__radio-button {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #C1CACF;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  top: calc( 50% - 10px );
+  display: block;
+  cursor: pointer;
+}
+.oc-widget-network__content__agregar .oc-item__radio-button::before {
+  width: 12px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  left: calc( 50% - 6px);
+  top: calc( 50% - 6px);
+  background-color: #505D6C;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.oc-widget-network__content__agregar .oc-item__radio-button:hover::before, .oc-widget-network__content__agregar .oc-item__radio-button.active::before {
+  transform: scale(1);
+}
+.oc-widget-network__content__agregar .slick-dots {
+  display: none !important;
+}
 
 .oc-btn {
   border-radius: 30px;
@@ -192,6 +268,13 @@
   }
   .oc-widget-network__content__slider .oc-item {
     padding: 0.8em 0;
+  }
+
+  .oc-widget-network__content__agregar .oc-item {
+    padding: 0.5em 0;
+  }
+  .oc-widget-network__content__agregar .oc-item__info {
+    max-width: 80%;
   }
 }
 
